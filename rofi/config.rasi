@@ -1,0 +1,91 @@
+* {
+    bg:          #c0c0c0;
+    bg-dark:     #808080;
+    fg:          #000000;
+    selected-bg: #000080;
+    selected-fg: #ffffff;
+    border-hi:   #ffffff;
+    border-lo:   #808080;
+    font:        "Terminus 10";
+    spacing:     0;
+}
+
+window {
+    width:  500px;  /* largura */
+    height: 400px;  /* altura fixa opcional */
+}
+
+configuration {
+    show-icons: true;
+    icon-theme: "Chicago95";
+}
+
+window {
+    background-color: @bg;
+    border:           2px;
+    border-color:     @border-hi;
+    width:            400px;
+    padding:          4px;
+}
+
+mainbox {
+    background-color: transparent;
+    children:         [ inputbar, listview ];
+    spacing:          2px;
+}
+
+inputbar {
+    background-color: @bg-dark;
+    text-color:       @fg;
+    border:           1px;
+    border-color:     @border-lo;
+    padding:          4px 6px;
+    children:         [ prompt, entry ];
+}
+
+prompt {
+    background-color: transparent;
+    text-color:       @fg;
+    padding:          0 4px 0 0;
+}
+
+entry {
+    background-color: @bg;
+    text-color:       @fg;
+    border:           1px;
+    border-color:     @border-lo;
+    padding:          2px 4px;
+}
+
+listview {
+    background-color: @bg;
+    border:           1px;
+    border-color:     @border-lo;
+    lines:            8;
+    scrollbar:        false;
+    padding:          2px;
+}
+
+element {
+    background-color: transparent;
+    text-color:       @fg;
+    padding:          3px 6px;
+    orientation:      horizontal;
+    spacing:          6px;
+}
+
+element.selected {
+    background-color: @selected-bg;
+    text-color:       @selected-fg;
+}
+
+element-icon {
+    size:             16px;
+    background-color: transparent;
+}
+
+element-text {
+    background-color: transparent;
+    text-color:       inherit;
+    vertical-align:   0.5;
+}
