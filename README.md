@@ -101,14 +101,7 @@ Aplicações automaticamente organizadas:
 * Título das janelas sobrescrito:
 
   ```
-  死にたい
-  ```
-* Transparência aplicada na barra e janelas
-* Picom rodando com backend `xrender`
-* Script custom para lockscreen
-
----
-
+  
 ## Observações
 
 * Algumas configs usam IDs fixos de dispositivos (xinput), pode quebrar em outro sistema
@@ -117,14 +110,6 @@ Aplicações automaticamente organizadas:
 
 ---
 
-## Possíveis Melhorias
-
-* Migrar para `picom --experimental-backends`
-* Usar `feh` ou `swww` no lugar do nitrogen
-* Modularizar config (split em arquivos)
-* Adicionar polybar ou waybar futuramente
-
----
 
 ## Filosofia do Setup
 
